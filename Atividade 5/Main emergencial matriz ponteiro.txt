@@ -1,0 +1,31 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include "matriz.h" 
+
+int main(int argc, char *argv[]) {
+	float a , b, c, d; 
+	Matriz *X; //criação de uma matriz 
+	X = cria(5,5);  //inserção de valores na matriz 
+	
+	atribui(X, 1, 2, 20); //Atribuição de valores na matriz
+	atribui(X, 2, 3, 5); //Atribuição de valores na matriz
+ 	atribui(X, 3, 0, 10); //Atribuição de valores na matriz
+ 	atribui(X, 4, 1, 88); //Atribuição de valores na matriz
+ 	
+	a = acessa(M, 1, 2);
+	b = acessa(M, 2, 3);
+	c = acessa(M, 3, 0); 
+	d = acessa(M, 4, 1);  
+	
+	printf("\nM[1][2]: %4.2f \n", a); 
+	printf("\nM[2][3]: %4.2f \n", b);
+ 	printf "\nM[3][0]: %4.2f \n", c);
+ 	printf("\nM[4][1]: %4.2f \n", d);   
+	System("PAUSE"); 
+	return 0;
+	
+}
+
+COLOCAR NO BLOCO DE NOTAS GRÁFICO DE TEMPO DE EXECUÇÃO E TEMPO DE COMPILAÇÃO
+COLOCAR COMENTÁRIO RETURN 1 EM CADA PASSA - SE REALMENTE LIBEROU/ALLOCOU MEMÓRIA
+ANALISAR GRAFICAMENTE A COMPLEXIDADE DO ALGORÍTMO 
